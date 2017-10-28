@@ -24,7 +24,7 @@
         // var lng = arg.lng;
         var lat = "54.8370236";
 				var lng = "11.4862062";
-        var   url = "https/maps.googleapis.com/maps/api/geocode/json?latlng="  + lat.toString() +  "," + lng.toString() + "&result_type=country&key=AIzaSyDvoNYyckdt6ZuShaRKk7xMILslSKq-Qe0";
+        var   url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="  + lat.toString() +  "," + lng.toString() + "&result_type=country&key=AIzaSyDvoNYyckdt6ZuShaRKk7xMILslSKq-Qe0";
         $.getJSON(url ,function(data){
             console.log(data.results[0].formatted_address);
             $("#map").text(data.results[0].formatted_address);
